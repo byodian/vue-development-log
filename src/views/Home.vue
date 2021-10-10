@@ -5,7 +5,7 @@ const updateKey = function (vm) {
     vm.$nextTick(() => {
       // 更新 key 值，强制刷新子组件
       vm.key += 1
-      console.log(vm.key)
+      // console.log(vm.key)
     })
   }
 }
@@ -38,10 +38,10 @@ export default {
   },
 
   beforeUpdate () {
-    console.log('beforeUpdate')
+    // console.log('beforeUpdate')
   },
   updated () {
-    console.log('updated')
+    // console.log('updated')
   },
 
   methods: {

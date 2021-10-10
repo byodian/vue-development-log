@@ -16,13 +16,13 @@ export default {
     }
   },
   mounted () {
-    console.log('mounted')
+    // console.log('mounted')
   },
   beforeUpdate () {
-    console.log('beforeUpdate')
+    // console.log('beforeUpdate')
   },
   updated () {
-    console.log('updated')
+    // console.log('updated')
   }
 }
 </script>

@@ -8,9 +8,9 @@
         About
       </router-link>
     </div>
-    <keep-alive>
-      <router-view />
-    </keep-alive>
+    <!-- <keep-alive> -->
+    <router-view />
+    <!-- </keep-alive> -->
   </div>
 </template>
 

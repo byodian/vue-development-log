@@ -1,16 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import dataV from '@jiaminghi/data-view'
 import router from './router'
+import dataV from '@jiaminghi/data-view'
 
-// 导入全局样式
 import '@/styles/index.scss'
-// 注册全局组件
-import '@/components/_global'
-import SlidePlugin from '@/plugins/slide'
+import { swiperPlugin, globalComponents } from '@/plugins/index.js'
 
 Vue.use(dataV)
-Vue.use(SlidePlugin)
+Vue.use(swiperPlugin)
+Vue.use(globalComponents)
 
 Vue.config.productionTip = false
 

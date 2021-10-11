@@ -1,14 +1,8 @@
-# vue-official-template1
+// Globally register all base components for convenience, because they
+// will be used very frequently. Components are registered using the
+// PascalCased version of their file name.
+// https://github.com/bencodezen/vue-enterprise-boilerplate/blob/main/src/components/_globals.js
 
-## vue 开发常见问题
-
-### 窗口宽度变化强制子组件重新渲染
-
-子组件绑定 key 值，当发生 `resize` 事件且页面重新渲染后（使用 `$nextTick`），更新 key 值，使组件强制刷新。但这会造成边子组件同样被销毁重新渲染，这会带来额外的性能消耗，并导致组件状态丢失。
-
-## 全局注册
-
-```js
 function install (Vue) {
 // https://webpack.js.org/guides/dependency-management/#require-context
 // https://webpack.docschina.org/guides/dependency-management/
@@ -46,4 +40,7 @@ function install (Vue) {
     Vue.component(componentName, componentConfig.default || componentConfig)
   })
 }
-```
+
+export default {
+  install
+}

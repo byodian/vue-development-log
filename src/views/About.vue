@@ -7,14 +7,8 @@ export default {
   },
   watch: {
     $slides () {
-      console.log(this.$slides)
+      // console.log(this.$slides)
     }
-  },
-  created () {
-    // console.log(this.$slides)
-  },
-  mounted () {
-    // console.log(this.$slides)
   }
 }
 </script>

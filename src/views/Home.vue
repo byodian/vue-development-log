@@ -1,5 +1,4 @@
 <script>
-import ScrollBoard from '@/components/ScrollBoard.vue'
 const updateKey = function (vm) {
   return function () {
     vm.$nextTick(() => {
@@ -23,9 +22,6 @@ const debounce = function (callback, delay) {
 
 export default {
   name: 'Home',
-  components: {
-    ScrollBoard
-  },
   data () {
     return {
       config: {},
@@ -86,7 +82,7 @@ export default {
 <template>
   <div class="home">
     <h1>Home</h1>
-    <ScrollBoard
+    <AppScrollBoard
       ref="scrollBoard"
       :key="key"
       :config="config"

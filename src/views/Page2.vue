@@ -81,8 +81,7 @@ export default {
 
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <AppScrollBoard
+    <BaseScrollBoard
       ref="scrollBoard"
       :key="key"
       :config="config"
